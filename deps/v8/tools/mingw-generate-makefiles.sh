@@ -28,7 +28,7 @@
 
 # Monkey-patch GYP.
 cat > tools/gyp/gyp.mingw << EOF
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # Copyright (c) 2009 Google Inc. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be

@@ -52,7 +52,7 @@
         '<(PRODUCT_DIR)/<(RULE_INPUT_ROOT).isolated',
       ],
       'action': [
-        'python',
+        'python2',
         '<(DEPTH)/tools/isolate_driver.py',
         '<(test_isolation_mode)',
         '--isolated', '<(PRODUCT_DIR)/<(RULE_INPUT_ROOT).isolated',

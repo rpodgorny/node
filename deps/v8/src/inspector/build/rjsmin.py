@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 #
 # Copyright 2011 - 2013
 # Andr\xe9 Malo or his licensors, as applicable

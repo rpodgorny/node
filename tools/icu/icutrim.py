@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 #
 # Copyright (C) 2014 IBM Corporation and Others. All Rights Reserved.
 #

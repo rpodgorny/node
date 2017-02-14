@@ -82,7 +82,7 @@ hooks = [
     'name': 'landmines',
     'pattern': '.',
     'action': [
-        'python',
+        'python2',
         'v8/gypfiles/landmines.py',
     ],
   },
@@ -124,7 +124,7 @@ hooks = [
     'name': 'gcmole',
     'pattern': '.',
     'action': [
-        'python',
+        'python2',
         'v8/tools/gcmole/download_gcmole_tools.py',
     ],
   },
@@ -132,7 +132,7 @@ hooks = [
     'name': 'jsfunfuzz',
     'pattern': '.',
     'action': [
-        'python',
+        'python2',
         'v8/tools/jsfunfuzz/download_jsfunfuzz.py',
     ],
   },
@@ -244,7 +244,7 @@ hooks = [
     'name': 'sysroot',
     'pattern': '.',
     'action': [
-        'python',
+        'python2',
         'v8/build/linux/sysroot_scripts/install-sysroot.py',
         '--running-as-hook',
     ],
@@ -255,7 +255,7 @@ hooks = [
     'name': 'instrumented_libraries',
     'pattern': '\\.sha1',
     'action': [
-        'python',
+        'python2',
         'v8/third_party/instrumented_libraries/scripts/download_binaries.py',
     ],
   },
@@ -263,7 +263,7 @@ hooks = [
     # Update the Windows toolchain if necessary.
     'name': 'win_toolchain',
     'pattern': '.',
-    'action': ['python', 'v8/gypfiles/vs_toolchain.py', 'update'],
+    'action': ['python2', 'v8/gypfiles/vs_toolchain.py', 'update'],
   },
   # Pull binutils for linux, enabled debug fission for faster linking /
   # debugging when used with clang on Ubuntu Precise.
@@ -272,7 +272,7 @@ hooks = [
     'name': 'binutils',
     'pattern': 'v8/third_party/binutils',
     'action': [
-        'python',
+        'python2',
         'v8/third_party/binutils/download.py',
     ],
   },
@@ -281,14 +281,14 @@ hooks = [
     # Note: This must run before the clang update.
     'name': 'gold_plugin',
     'pattern': '.',
-    'action': ['python', 'v8/gypfiles/download_gold_plugin.py'],
+    'action': ['python2', 'v8/gypfiles/download_gold_plugin.py'],
   },
   {
     # Pull clang if needed or requested via GYP_DEFINES.
     # Note: On Win, this should run after win_toolchain, as it may use it.
     'name': 'clang',
     'pattern': '.',
-    'action': ['python', 'v8/tools/clang/scripts/update.py', '--if-needed'],
+    'action': ['python2', 'v8/tools/clang/scripts/update.py', '--if-needed'],
   },
   {
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
