@@ -26,7 +26,7 @@
             '<(inspector_generated_injected_script)',
           ],
           'action': [
-            'python',
+            'python2',
             'build/xxd.py',
             'InjectedScriptSource_js',
             'injected-script-source.js',
@@ -50,7 +50,7 @@
             '<(inspector_generated_debugger_script)',
           ],
           'action': [
-            'python',
+            'python2',
             'build/xxd.py',
             'DebuggerScript_js',
             'debugger-script.js',
@@ -73,7 +73,7 @@
             '<@(SHARED_INTERMEDIATE_DIR)/src/js_protocol.stamp',
           ],
           'action': [
-            'python',
+            'python2',
             '<(protocol_path)/CheckProtocolCompatibility.py',
             '--stamp', '<@(_outputs)',
             'js_protocol.json',
@@ -97,7 +97,7 @@
             '<@(inspector_generated_sources)',
           ],
           'action': [
-            'python',
+            'python2',
             '<(protocol_path)/CodeGenerator.py',
             '--jinja_dir', '../../third_party',
             '--output_base', '<(SHARED_INTERMEDIATE_DIR)/src/inspector',

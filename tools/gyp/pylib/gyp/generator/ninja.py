@@ -1746,7 +1746,7 @@ def _AddWinLinkRules(master_ninja, embed_manifest):
     return '%(python)s gyp-win-tool link-with-manifests $arch %(embed)s ' \
            '%(out)s "%(ldcmd)s" %(resname)s $mt $rc "$intermediatemanifest" ' \
            '$manifests' % {
-               'python': sys.executable,
+               'python2': sys.executable,
                'out': out,
                'ldcmd': ldcmd,
                'resname': resource_name,

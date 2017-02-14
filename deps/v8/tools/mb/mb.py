@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # Copyright 2016 the V8 project authors. All rights reserved.
 # Copyright 2015 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
@@ -1347,7 +1347,7 @@ class MetaBuildWrapper(object):
     print_env('LLVM_FORCE_HEAD_REVISION')
 
     if cmd[0] == self.executable:
-      cmd = ['python'] + cmd[1:]
+      cmd = ['python2'] + cmd[1:]
     self.Print(*[shell_quoter(arg) for arg in cmd])
 
   def PrintJSON(self, obj):

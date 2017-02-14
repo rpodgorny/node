@@ -24,7 +24,7 @@
               'action_name': 'archive_test262',
               'inputs': ['archive.py', '<!@(python list.py)'],
               'outputs': ['data.tar'],
-              'action': ['python', 'archive.py'],
+              'action': ['python2', 'archive.py'],
             },
           ],
         },

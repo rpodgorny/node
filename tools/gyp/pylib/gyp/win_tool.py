@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # Copyright (c) 2012 Google Inc. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
@@ -144,7 +144,7 @@ class WinTool(object):
     # first and only link. We still tell link to generate a manifest, but we
     # only use that to assert that our simpler process did not miss anything.
     variables = {
-      'python': sys.executable,
+      'python2': sys.executable,
       'arch': arch,
       'out': out,
       'ldcmd': ldcmd,

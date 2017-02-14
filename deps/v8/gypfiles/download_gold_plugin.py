@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # Copyright 2015 the V8 project authors. All rights reserved.
 # Copyright 2015 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
@@ -70,7 +70,7 @@ def main():
   # (currently aborts with exit code 1,
   # https://github.com/GoogleCloudPlatform/gsutil/issues/289) or change the
   # stdin->stderr redirect in update.py to do something else (crbug.com/494442).
-  subprocess.check_call(['python', GSUTIL_PATH,
+  subprocess.check_call(['python2', GSUTIL_PATH,
                          'cp', remote_path, targz_name],
                         stderr=open('/dev/null', 'w'))
   subprocess.check_call(['tar', 'xzf', targz_name])

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # Copyright (c) 2014 Google Inc. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without

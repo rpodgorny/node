@@ -281,7 +281,7 @@ class XcodeProject(object):
         command_prefix = ''
         if serialize_all_tests:
           command_prefix = \
-"""python -c "import fcntl, subprocess, sys
+"""python2 -c "import fcntl, subprocess, sys
 file = open('$TMPDIR/GYP_serialize_test_runs', 'a')
 fcntl.flock(file.fileno(), fcntl.LOCK_EX)
 sys.exit(subprocess.call(sys.argv[1:]))" """
